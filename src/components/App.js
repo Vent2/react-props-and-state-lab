@@ -51,7 +51,7 @@ class App extends React.Component {
               <Filters onChangeType={this.onChangeType} onFindPetsClick={this.fetchPets} />
             </div>
             <div className="twelve wide column">
-              <PetBrowser onAdoptPet={this.onAdoptPet}/>
+              <PetBrowser  pets={this.state.pets} onAdoptPet={this.onAdoptPet}/>
             </div>
           </div>
         </div>
